@@ -1,5 +1,7 @@
 # SecureLoginSystem
-An MVC example. Uses encryption and salts to make your account data secure.
+Made using Flask.
+
+This is an MVC example. Uses encryption and salts to make your account data secure.
 
 When I make two accounts with the same password, they will have a different salt, and therefore a different hash.
 
