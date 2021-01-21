@@ -20,5 +20,8 @@ The controller is "Application.py". It will tell the webpage to render, and will
 This is where most of the user interaction takes place.
 
 # How to run
+
+- NOTE: You will need your own SQL database URL and Key.
+
 1. Fill in `<DATABASE URL HERE>` in start.bat, and `<DATABASE KEY HERE>` in application.py.
 2. Run start.bat and go to http://127.0.0.1:5000/ in a web browser.
