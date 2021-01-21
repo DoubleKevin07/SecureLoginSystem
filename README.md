@@ -6,12 +6,12 @@ When I make two accounts with the same password, they will have a different salt
 In this gif, I show three usage examples.
 
 1. I try to create an account that already exists (it doesn't let me).
-2. I make an account "James1" with password "James"
-3. I make an account "James2" with password "James"
+2. I make an account "James2" with password "James"
+3. I make an account "James3" with password "James"
 
-We see at the end the different hashes for James1 and James2.
+We see at the end the different hashes for the password for James2 and James3, even though it is the same password.
 
-![Example](https://i.imgur.com/Wo2gBAU.gif)
+![Example](https://i.imgur.com/AjBTCGi.gif)
 
 ## Which file is which?
 
