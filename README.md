@@ -1,6 +1,18 @@
 # SecureLoginSystem
 An MVC example. Uses encryption and salts to make your account data secure.
 
+When I make two accounts with the same password, they will have a different salt, and therefore a different hash.
+
+In this gif, I show three usage examples.
+
+1. I try to create an account that already exists (it doesn't let me).
+2. I make an account "James1" with password "James"
+3. I make an account "James2" with password "James"
+
+We see at the end the different hashes for James1 and James2.
+
+![Example](https://i.imgur.com/Wo2gBAU.gif)
+
 ## Which file is which?
 
 ### Model
