@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Error
+{% endblock %}
+
+{% block body %}
+    <h2>Create a New Account</h2>
+    <p>Wow, you're looking to sign up on my website? That's great! I sure need accounts so I know my system can handle the stress. Trust me, your data is 70% secure. Probably don't put your bank password in. Or do it, I don't care, I'm just the web dev. Fill out the information below and we'll get you on your way!</p>
+
+    <div>
+        <form action="{{ url_for('create_account') }}" method="post">
+            <p>
+            Username:<br>
+            <input name="name" type="text" placeholder="Name">
+            <br>
+            <br>  
+            Password:<br>    
+            <input name="password" type="password" placeholder="Password">
+            <br> 
+            Confirm password: <br> 
+            <input name="confirm-password" type="password" placeholder="Confirm Password">
+            <br>
+            <button type="submit" class="form-group btn btn-primary">Sign up!</button>
+            </p>
+        </form>
+        
+    </div>
+
+{% endblock %}

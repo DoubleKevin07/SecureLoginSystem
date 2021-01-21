@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <!-- We have a separate container so we get the cool shadow effect. -->
+        <div class = "content_container">
+            <h1 style="color: #d1cb90">Kevin's Login Website</h1>
+            <div class ="taskbar">
+                    <a class = "task_bar_button" href = "">Button</a>
+                    <a class = "task_bar_button" href = "">Button#2</a>
+                    <a class = "task_bar_button" href = "account">Account</a>
+            </div>
+            {% block body %}
+            {% endblock %}
+        </div>  
+    </body>
+</html>

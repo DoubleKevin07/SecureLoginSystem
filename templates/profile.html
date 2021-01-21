@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block body %}
+    <h2>Account</h2>
+    <p>Here, you can view your account related data, for demonstration purposes.</p>
+
+    <div>
+        <p>
+        <ol>
+            <li><b>Username:</b> {{ user.username }}</li>
+            <li><b>Password Salt:</b> {{ user.salt }}</li>
+            <li><b>Password Hash:</b> {{ user.pw_hash }}</li>
+        </ol>
+        <form action="{{ url_for('logout') }}">
+            <p>
+            <button type="submit" class="form-group btn btn-primary">Log Out</button>
+            </p>
+        </form>
+        </p>
+    </div>
+
+{% endblock %}
